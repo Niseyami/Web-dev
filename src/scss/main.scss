@@ -4,6 +4,15 @@ a.navbar-brand {
     word-break: break-all;
 }
 
+a.nav-item {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
 html {
     font-size: 14px;
     position: relative;
