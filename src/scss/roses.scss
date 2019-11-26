@@ -1,0 +1,11 @@
+img {
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    margin: 0;
+    transition:transform 0.25s ease;
+    &:hover {
+        transform:scale(1.5);
+        z-index: 2;
+    }
+}
