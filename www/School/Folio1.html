@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Folio 1</title>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+            
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/ico/favicon-16x16.png">
+        <link rel="manifest" href="../assets/ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <style>p{font-size:larger;}</style>
+    </head>
+    <body>
+        <div id="main">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <div class="navbar-nav flex-grow-1">
+                            <a class="nav-item nav-link text-dark" href="../Author.html">Author</a>
+                            <a class="nav-item nav-link text-dark" href="index.html">School stuff</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container" style="-webkit-user-select: none;">
+                <h1 style="font-size: 10vh;">About me</h1>
+                <script>
+                    function display() {
+                        var body = document.body, html = document.documentElement;
+                        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+                        var width = Math.max(body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetHeight);
+                        var main = document.getElementById("main");
+                        var video = document.createElement("video");
+                        
+                        document.body.style.overflow = "hidden";
+
+                        video.height = height;
+                        video.width = width;
+                        video.autoplay = true;
+                        video.type = "video/mp4";
+                        video.src = "../assets/rick.mp4";
+
+                        main.innerHTML = '';
+                        main.style.background = "#000000";
+                        main.appendChild(video);
+                        video.oncanplay = video.play()
+                    }
+                </script>
+                <img class="img-fluid rounded-circle img-thumbnail float-right" src="../assets/kitsu.png" id="pfp" onmouseover="display()">
+                <p>Hello fellow internet browser, you have miraculously stumbled upon the webpage that is belonging to the person’s whose name happens to be <code>a7d582f505ce5e4232da3ff1aee16420f74f7c6d</code> when hashed with sha1. You may call me god. Now, I was born in a country somewhere in Asia with the name <code>197042c4de91dae8aeafa9a52dc8c3a59aa41dc0</code> but soon moved to <code>a2238e91907fa2436a6a50e0fd8cf97ab60ec508</code> and then to Australia.</p>
+                <hr>
+                <p>I spend a lot of time either reading or on my computer. Now, since I kinda play around with computers, I have a few controversial opinions, mainly that java is tra... Sorry, we're back now, I was just informed that making rash statements online is a guarenteed death threat and a half, so I will now retract my previous statement.</p>
+                <hr>
+                <p>Since I am a superiour human being, you may wish contact me, which is possible at <a href="mailto:sasith.deabrew@gvgs.vic.edu.au"> this email</a>. If you wish to see any of the other work I do you may want to visit <a href="https://github.com/Niseyami">my github</a>. If you play video games you should add my <a href="http://steamcommunity.com/profiles/76561198264706271"> steam profile</a>. And remember comrades, rush b or иди нахуй ты сука блять.</p>
+                <hr>
+                <p>Protip: Hover over my profile picture</p>
+            </div>
+            <footer class="footer border-top">
+                <div class="container-fluid">
+                    <ul class="text-muted font-weight-light">
+                        <li>Copyright &copy; Cubic 2019</li>
+                        <li><a href="../index.html" class="text-muted font-weight-light">Home</a></li>
+                        <li><a href="../Author.html" class="text-muted font-weight-light">Author</a></li>
+                        <li><a href="index.html" class="text-muted font-weight-light">School stuff</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
